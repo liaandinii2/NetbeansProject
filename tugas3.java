@@ -47,6 +47,12 @@ public class tugas3 extends javax.swing.JFrame {
             }
         });
 
+        eUser.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                eUserActionPerformed(evt);
+            }
+        });
+
         jButton1.setText("Login");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -111,9 +117,10 @@ UPassword = new String(ePassword.getPassword());
 boolean Pernyataan = Username.equals("sahru") && 
 UPassword.equals("123");
 if(Pernyataan == true){ 
-JOptionPane.showConfirmDialog(null, " Selamat Anda Berhasil Login", "Login", JOptionPane.DEFAULT_OPTION);
+    JOptionPane.showConfirmDialog(null, "Username: "+Username+"\nPassword: "+UPassword+ "\nSelamat Anda Berhasil Login", "Login", JOptionPane.DEFAULT_OPTION);
 }else{ 
 JOptionPane.showConfirmDialog(null, " Maaf user dan Password Salah", "Login", JOptionPane.DEFAULT_OPTION);
+
 }
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -126,6 +133,10 @@ JOptionPane.showConfirmDialog(null, " Maaf user dan Password Salah", "Login", JO
 eUser.setText("");
 ePassword.setText("");        // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void eUserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eUserActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_eUserActionPerformed
 
     /**
      * @param args the command line arguments
